@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTI Academy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-section {
+            background: url('image/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 60px 0;
+        }
+        .hero-section h1, .hero-section p {
+            margin: 0;
+        }
+        .course-card {
+            margin-bottom: 20px;
+        }
+        .course-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .container2 {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="rose">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="image/ntilogo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;" class="logo-nti"> NTI Tech Academy
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Courses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" onclick="openModal('Machine Learning + AI')">Machine Learning + AI</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Automation Testing')">Automation Testing</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Data Science')">Data Science</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Digital Marketing')">Digital Marketing</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('MERN Stack')">MERN Stack</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Mean Stack')">Mean Stack</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Basics Computer')">Basics Computer</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Cloud Computing')">Cloud Computing</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Python')">Python</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Android')">Android</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Manual Testing')">Manual Testing</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Java Full Stack')">Java Full Stack</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Graphic Design')">Graphic Design</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('C/C++')">C/C++</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('SQL')">SQL</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('iOS')">iOS</a>
+                            <a class="dropdown-item" href="#" onclick="openModal('Advance Excel')">Advance Excel</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#enrollModal">Apply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>Achieve Your Goals</h1>
+            <p>Your partner in technical excellence</p>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image/tech3.jpg" class="img-fluid" alt="NTI Tech Academy">
+                </div>
+                <div class="col-md-6">
+                    <h2>Enhance Your Knowledge And Build Career In IT</h2>
+                    <p>Join NTI Tech Academy, and supercharge your IT career with knowledge, skill, and innovation. Embark on a transformative tech journey with us, shaping your future in the world of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container text-center">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Paid & Unpaid Internship</h5>
+                            <p class="card-text">Unlock Your Full Tech Potential: Join Our IT Institute Today</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Mentor Support</h5>
+                            <p class="card-text">It would be helpful to understand your needs and goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Placement Support</h5>
+                            <p class="card-text">Your Career Destination: 100% Placement Guaranteed!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Work and Assignments</h5>
+                            <p class="card-text">Maximize Your Tech Talents at NTI Solution Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Flexible Timing</h5>
+                            <p class="card-text">Flexibility at its best</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Backup Classes</h5>
+                            <p class="card-text">In NTI you can get backup classes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-5">
+        <div class="container2">
+            <h2 class="text-center mb-4">Our Courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <img src="image/web dev.jpg" class="img-fluid mb-3" alt="Course Image">
+                        <h2 class="course-title">Web Development</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <img src="image/phyton.jpg" class="img-fluid mb-3" alt="Course Image">
+                        <h2 class="course-title">Python Programming</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <img src="image/full stack.jpg" class="img-fluid mb-3" alt="Course Image">
+                        <h2 class="course-title">Full Stack Development</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <img src="image/cloud.jpg" class="img-fluid mb-3" alt="Course Image">
+                        <h2 class="course-title">Cloud Computing</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <img src="image/ml.jpg" class="img-fluid mb-3" alt="Course Image">
+                        <h2 class="course-title">Machine Learning</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <img src="image/digital.jpg" class="img-fluid mb-3" alt="Course Image">
+                        <h2 class="course-title">Digital Marketing</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Reach Out to Us</h4>
+                    <p>For any inquiries or assistance, feel free to get in touch with us.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@ntiacademy.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Send Us a Message</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2023 NTI Tech Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Course Information -->
+    <div class="modal fade" id="courseModal" tabindex="-1" role="dialog" aria-labelledby="courseModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel">Course Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="courseContent"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enrollment Modal -->
+    <div class="modal fade" id="enrollModal" tabindex="-1" role="dialog" aria-labelledby="enrollModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollModalLabel">Enroll Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="enrollName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="enrollEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <select class="form-control" id="enrollCourse" required>
+                                <option>Machine Learning + AI</option>
+                                <option>Automation Testing</option>
+                                <option>Data Science</option>
+                                <option>Digital Marketing</option>
+                                <option>MERN Stack</option>
+                                <option>Mean Stack</option>
+                                <option>Basics Computer</option>
+                                <option>Cloud Computing</option>
+                                <option>Python</option>
+                                <option>Android</option>
+                                <option>Manual Testing</option>
+                                <option>Java Full Stack</option>
+                                <option>Graphic Design</option>
+                                <option>C/C++</option>
+                                <option>SQL</option>
+                                <option>iOS</option>
+                                <option>Advance Excel</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enroll Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openModal(courseName) {
+            $('#courseModalLabel').text(courseName);
+            $('#courseContent').text('Details about ' + courseName);
+            $('#courseModal').modal('show');
+        }
+    </script>
+</body>
+</html>
